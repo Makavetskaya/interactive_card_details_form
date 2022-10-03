@@ -12,7 +12,7 @@
         flex-direction: column;
         margin-top: 20px;
 
-         input{
+         .input{
             margin-top: 8px;
             outline: none;
             padding: 8px;
@@ -22,7 +22,9 @@
                 color:rgb(142, 133, 147);
                 font-family: 'Space Grotesk', sans-serif;
             }
+            
          }
+         
          input:focus{
             border: 1px solid transparent;
             background: 
@@ -30,6 +32,10 @@
             linear-gradient(to left, hsl(278, 94%, 30%) , hsl(249, 99%, 64%)); 
             background-clip: padding-box, border-box;
             background-origin: padding-box, border-box;
+         }
+
+         input .error{
+            border: 1px solid red;
          }
         }
 

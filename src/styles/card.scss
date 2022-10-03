@@ -19,40 +19,36 @@
        
     }
     .card-front{  
-        // background: url('../images/bg-card-front.png') no-repeat;
-        // background-size: cover;
         background: linear-gradient(60deg, #03001e, #7303c0,#f64f59, #7303c0);
-        // background: linear-gradient(60deg, #21092f, #12c2e9,#c471ed,#f64f59 );
         animation: gradient 3s ease infinite;
         background-size: 200% 200%;
         flex-direction: column;
-        &::before{
-            content: ' ';   
-            display: block;
-            width: 31px;
-            height: 31px;
-            border-radius: 50%;
-            background-color:rgb(255, 255, 255);
-            &::after{
-                content: ' ';  
-                position: relative; 
-                display: block;
-                bottom:82px;
-                left: 45px;
-                width: 12px;
-                height: 12px;
-                border: 0.5px solid white ;
-                border-radius: 50%;
-               }  
-           }
            
            .info-card{
-            margin-top:55px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            
             perspective: 1000px;
+            .info-brand{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .card-brand{
+                    font-size: 26px;
+                }
+            }
+
+            .logo{
+                background-image: url('/src/images/card-logo.svg');
+                width: 70px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
            
             .output-number{
+                margin-top: 40px;
                 font-size: 1.25rem;
                 letter-spacing: 3.59px;
                 transition: all 0.75s ease-out;
@@ -60,8 +56,8 @@
                
             }
             .output-name{
+                margin-top: 20px;
                 display: flex;
-                margin-top:20px;
                 font-size: 10px; 
                 letter-spacing: 2px;
                 justify-content: space-between;
