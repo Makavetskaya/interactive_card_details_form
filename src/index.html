@@ -17,17 +17,19 @@
                         <div class="info-card">
                            <h2 class="output-number">0000 0000 0000 0000 </h2>
                            <div class="output-name">
-                                <h3 class="name">Jane Appleseed </h3>
-                                <h3 class="month-output">00<span>/<span>00</h3>
+                                <h3 class="name">Jane Appleseed</h3>
+                                <div class="output-data">
+                                    <h3 class="month-output">00</h3>
+                                    <div>/</div>
+                                    <h3 class="year-output">00</h3>
+                                </div>
                             </div>                           
                         </div>
                     </div>
                 </div>
                 <div class="container-wrapp-back">
                     <div class="card card-back">
-                        <div class="output-cv">
-                            <p>000</p>
-                        </div>
+                        <h3 class="output-cv">000</h3>
                     </div>
                 </div>
              </div>
@@ -45,13 +47,13 @@
                         <div class="input-field">
                             <label for="data">Exp. Date (MM/YY)</label>
                             <div class="input-data">
-                                <input type="numder" placeholder="MM" name="data">
-                                <input type="number" placeholder="YY" name="data">
+                                <input type="numder" placeholder="MM" name="data" class="month-input">
+                                <input type="number" placeholder="YY" name="data" class="year-input">
                             </div>
                          </div>
                         <div class="input-field">
-                            <label for="cvc">CVC</label>
-                            <input type="numder" placeholder="e.g. 123" id="cvc" name="cvc" style="width:80px">
+                            <label for="cv">CV</label>
+                            <input type="numder" placeholder="e.g. 123" id="cv" name="cv" class="cv-input">
                         </div>
                      </div>
                       <button class="btn" type="submit">Confirm</button>
