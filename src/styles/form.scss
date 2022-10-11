@@ -10,22 +10,55 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 8px;
+        
 
          .input{
             margin-top: 8px;
             outline: none;
             padding: 8px;
-            border: solid 1px rgb(142, 133, 147);
+            border: solid 1px rgb(147, 133, 133);
+            display: block;
             border-radius: 5px;
+           
+          
             ::placeholder{
                 color:rgb(142, 133, 147);
                 font-family: 'Space Grotesk', sans-serif;
             }
             
+           
+            
+            
          }
+         .error-invalid{
+            border: solid 1px rgb(255, 0, 0);
+            
+         }
+         .error{
+            color: rgb(255, 0, 0);
+            font-size: 8px;
+            margin-top: 4px;
+            display: block;
+         }
+         .error1{
+            color: rgb(255, 0, 0);
+            font-size: 8px;
+            margin-top: 4px;
+            display: none;
+         }
+         .error-empty{
+            display: block;
+         }
+
+         .not-invalid{
+            display: block;
+         }
+        
+        
          
-         input:focus{
+         
+         .input:focus{
             border: 1px solid transparent;
             background: 
             linear-gradient(to right, white, white), 
@@ -34,15 +67,28 @@
             background-origin: padding-box, border-box;
          }
 
-         input .error{
-            border: 1px solid red;
-         }
-        }
-
-        .data-wpapp{
-            display: flex;
-           
         }
 
     }
+    .data-wpapp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+
 }
+
+
+
+
+// .error{
+//     color: red;
+//     font-size: .7rem;
+//     letter-spacing: normal;
+// }
+
+
+
+
+
