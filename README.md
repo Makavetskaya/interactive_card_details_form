@@ -6,4 +6,5 @@ Any input field is empty
 The card number, expiration date, or CVC fields are not formatted correctly.
 
 
-<img width="1428" alt="desing" src="https://user-images.githubusercontent.com/90634573/195344233-da270eea-4150-4bf6-8819-968898c16b4c.png">
+
+<img width="1381" alt="desing" src="https://user-images.githubusercontent.com/90634573/195344555-a30c5918-58b1-44eb-9e41-c955bc6ba027.png">
