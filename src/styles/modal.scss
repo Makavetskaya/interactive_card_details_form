@@ -1,5 +1,6 @@
 .modal{
-    opacity: 0;
+    display: none;
+.thanks{
     width: 370px;
     padding: 39px 20px;
     display: flex;
@@ -7,6 +8,7 @@
     justify-content: center;
     flex-direction: column;
     margin-left: 60px;
+}
     .completed{
         width: 70px;
         height: 70px;
@@ -27,4 +29,8 @@
         margin-bottom: 25px;
     }
 
+}
+
+.show{
+    display: block;
 }

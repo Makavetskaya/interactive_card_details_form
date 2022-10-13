@@ -1,14 +1,14 @@
 .card-wrapp{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin: 0 15px;
     transform:perspective(1000px);
     
     .card{ 
         display: flex;
         transform-style: preserve-3d;
-        width: 330px;
-        height: 185px;
+        width: 380px;
+        height: 210px;
         border-radius: .3rem;
         text-transform: uppercase;
         color: aliceblue;
@@ -28,8 +28,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
-            perspective: 1000px;
+             perspective: 1000px;
             .info-brand{
                 display: flex;
                 justify-content: space-between;
@@ -48,10 +47,11 @@
             }
            
             .output-number{
-                margin-top: 40px;
-                font-size: 1.25rem;
+                margin-top: 65px;
+                font-size: 1.4rem;
                 letter-spacing: 3.59px;
                 transition: all 0.75s ease-out;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
                
                
             }
@@ -63,6 +63,7 @@
                 justify-content: space-between;
                 perspective: 1000px;
                 transition: all 0.75s ease-out;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
                 
             }
 
@@ -82,9 +83,9 @@
         background-size: cover;
         .output-cv{
             position: relative;
-            top: 4rem;
-            left: 16rem;
-            font-size: 10px; 
+            top: 4.7rem;
+            left: 18rem;
+            font-size: 12px; 
             letter-spacing: 2px;
         }
        

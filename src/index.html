@@ -20,8 +20,7 @@
                             <div class="logo"></div>
                             <div class="card-brand"><i id="cardBrand"></i></div>
                             </div>
-                
-                           <h2 class="output-number">0000 0000 0000 0000 </h2>
+                           <h2 class="output-number">0000 0000 0000 0000</h2>
                            <div class="output-name">
                                 <h3 class="name">Jane Appleseed</h3>
                                 <div class="output-data">
@@ -40,7 +39,7 @@
                 </div>
              </div>
              <div class="form-input">
-                 <form id="form">
+                 <form id="form" action="#">
                     
                     <div class="input-field">
                         <label for="name">Cardholder name</label>
@@ -48,7 +47,8 @@
                                placeholder="e.g. Jane Appleseed" 
                                name="name" 
                                class="input name-input" 
-                               id="nameCard">
+                               id="nameCard"
+                               data-reg="valid">
                         <p class="error error-name"></p>
                     </div>
 
@@ -56,10 +56,13 @@
                      <div class="input-field">
                         <label for="number">Card Number</label>
                         <input type="text" 
-                               placeholder="e.g. 1234 5678 9123 0000" 
+                               placeholder="1234 5678 9123 0000" 
                                name="number" 
                                class="input number-input" 
-                               id="numberCard">
+                               id="numberCard"
+                               data-reg="valid"
+                               minlength="19"
+                               maxlength="19">
                         <p class="error error-number"></p>
                      </div>
 
@@ -68,38 +71,44 @@
 
                         <div class="input-field">
                             <label for="data">Exp. Date (MM/YY)</label>
-                            <div class="input-data">
-                                <input type="numder" 
+                            <div class="data-wpapper">
+                                <input type="text" 
                                        placeholder="MM" 
                                        name="data" 
                                        class="input month-input"
-                                       id="monthCard">
-                                <input type="number" 
+                                       id="monthCard"
+                                       data-reg="valid">
+                                <input type="text" 
                                        placeholder="YY" 
                                        name="data" 
                                        class="input year-input"
-                                       id="yearCard">
-                                <p class="error error-data"></p>
-                            </div>
+                                       id="yearCard"
+                                       data-reg="valid">
+                            </div>  
+                            <p class="error error-data"></p>  
                          </div>
-                         
-                        <div class="input-field">
+                         <div class="input-field">
                             <label for="cvc">CVC</label>
-                            <input type="numder" 
+                            <input type="text" 
                                    placeholder="e.g. 123"  
                                    name="cvc" class="input cv-input" 
-                                   id="cvcCard">
+                                   id="cvcCard"
+                                   data-reg="valid">
                             <p class="error error-cvc"></p>
-                        </div>
+                         </div>
+         
                      </div>
-
-                      <button class="btn" type="submit">Confirm</button>
+                     <button class="btn" type="submit" id="submit">Confirm</button>
                  </form>
-               <div class="modal">
-                <div class="completed"></div>
-                 <h2> Thank you!</h2>
-                 <p>We've added your card detalis</p>
-                 <button class="btn close">Continue</button>
+
+               <div class="modal" id="modal">
+                <div class="thanks">
+                    <div class="completed"></div>
+                    <h2> Thank you!</h2>
+                    <p>We've added your card detalis</p>
+                    <button class="btn close">Continue</button>
+                </div>
+               
                </div>
              </div>
         </div>

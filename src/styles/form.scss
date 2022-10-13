@@ -1,9 +1,10 @@
 .form-input{
-    // background-color: antiquewhite;
-    padding: 30px;
+   width: 420px;
+   margin: 0 15px;
+   
     form{
         color: hsl(278, 68%, 11%);
-        font-size: .8rem;
+        font-size: .9rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         .input-field{
@@ -11,7 +12,23 @@
         display: flex;
         flex-direction: column;
         margin-top: 8px;
-        
+        .data-wpapper{
+            display: flex;
+            // flex-direction: column;
+            
+            .month-input{
+                width: 80px;
+                margin-right: 10px;
+            }
+            .year-input{
+                width: 80px;
+                margin-right: 10px; 
+            }
+    
+        }
+        .cv-input{
+            width: 80px;
+        }
 
          .input{
             margin-top: 8px;
@@ -31,6 +48,8 @@
             
             
          }
+
+
          .error-invalid{
             border: solid 1px rgb(255, 0, 0);
             
@@ -40,12 +59,6 @@
             font-size: 8px;
             margin-top: 4px;
             display: block;
-         }
-         .error1{
-            color: rgb(255, 0, 0);
-            font-size: 8px;
-            margin-top: 4px;
-            display: none;
          }
          .error-empty{
             display: block;
@@ -80,7 +93,9 @@
 }
 
 
-
+.hidden{
+    display: none;
+}
 
 // .error{
 //     color: red;
